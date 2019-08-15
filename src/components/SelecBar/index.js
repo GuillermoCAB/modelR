@@ -7,7 +7,7 @@ import arrow from '../../images/arrow.png';
 export default class SelecBar extends Component {
   render() {
     return <footer className='select'>
-
+      
       <div className="info">
         <div className="price">
           <p>Total</p>

@@ -1,0 +1,151 @@
+section.engine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 10%;
+  height: 60%;
+}
+
+section.engine .image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.engine .image img {
+  width: 36%;
+}
+
+section.engine .menu {
+  width: 50%;
+}
+
+section.engine .menu h1 {
+  font-size: 58px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+section.engine .menu ul {
+  padding: 0;
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.engine .menu ul button {
+  background: transparent;
+  border: none;
+  margin: 6% 0 0;
+}
+
+section.engine .menu ul button .after {
+  display: none;
+  color: #ab1725;
+  position: absolute !important;
+  right: 11%;
+  font-size: 28px;
+}
+
+section.engine .menu ul button .after p {
+  margin: 0;
+}
+
+section.engine .menu ul button.select li {
+  opacity: 1;
+}
+
+section.engine .menu ul button.select li::after {
+  content: '';
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ab1725;
+  border-radius: 100%;
+}
+
+section.engine .menu ul button li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #eaecf0a9;
+  opacity: 0.5;
+  -webkit-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+  height: 100%;
+  padding: 4% 5%;
+}
+
+section.engine .menu ul button li::after {
+  content: '';
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+section.engine .menu ul button li:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+section.engine .menu ul button li h1 {
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 42px;
+  width: 20%;
+}
+
+section.engine .menu ul button li h1 .colored {
+  color: #ab1725;
+  padding-left: 10%;
+  font-weight: 500;
+}
+
+section.engine .menu ul button li .feature {
+  color: #A8A8A8;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+section.engine .menu ul button li .feature.last {
+  width: 35%;
+}
+
+section.engine .menu ul button li .feature .dark {
+  color: black;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import Engine from '../Engine';
 
 import api from '../../services/api';
 
@@ -7,7 +10,7 @@ import './styles.css';
 import Header from '../../components/Header';
 import SelecBar from '../../components/SelecBar';
 
-export default class Engine extends Component {
+export default class Builder extends Component {
   state = {
     response: [],
     engines:[],
@@ -15,7 +18,8 @@ export default class Engine extends Component {
     colors: [],
     selColor: {},
     wheels: [],
-    selWheel: {},    
+    selWheel: {},  
+    step: 1,  
   };
 
   async componentDidMount() {
@@ -78,40 +82,10 @@ export default class Engine extends Component {
 
   render() {
     return <div>
-        <Header />
-        <section className="engine">
-
-          <div className="image">
-            <img src={`../../images/engine-${this.state.selEngine.type}.png`} alt=""/>
-          </div>
-
-          <div className="menu">
-            <h1>Engine</h1>
-            <ul>
-              {this.state.engines.map(item => 
-              <button  key={item.id} id={item.id} onClick={()=> {this.engineHandler(item)}}>
-                <li>
-                  <h1>
-                    <span>{item.kwh}</span>
-                    <span className="colored">{item.type}</span>
-                  </h1>
-                  <div className="feature">
-                    <span className="dark">{item.kwh}</span>
-                    <span> kWh</span>
-                  </div>
-                  <div className="feature" id="last">
-                    <span className="dark">{item.range}</span>
-                    <span> miles range</span>
-                  </div>
-                </li>
-              <div className="after">
-                <p>+ ${this.formatNumber(item.price)}</p>
-              </div>
-              </button>
-                )}
-            </ul>
-          </div>
-        </section>
+        <Header />        
+        <BrowserRouter>
+          <Route path='/builder/engine' exact component={Engine} />
+        </BrowserRouter>
         <SelecBar state={this.state} formatNumber={this.formatNumber} />
     </div>;
   }
