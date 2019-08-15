@@ -1,0 +1,32 @@
+section.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 10%;
+    
+     img {
+        width: 80%;
+     }
+
+        button.begin {
+        background: none;
+        border: none;
+        margin-top: 25%;
+        font-size: 22px;
+        letter-spacing: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        img {
+            width: 12%;
+            margin-left: 20px;
+        }
+
+     }
+}

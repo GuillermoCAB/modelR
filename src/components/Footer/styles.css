@@ -1,0 +1,50 @@
+footer#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2%;
+  width: 100%;
+  padding: 0 10%;
+}
+
+footer#main .infobox {
+  border-bottom: 5px solid #AB1725;
+}
+
+footer#main .infobox .metric {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer#main .infobox .metric .big {
+  font-size: 45px;
+  color: #AB1725;
+  margin: 0;
+  line-height: 30px;
+}
+
+footer#main .infobox .metric .small {
+  padding-left: 10px;
+  color: #AB1725;
+  margin: 0;
+  font-size: 22px;
+}
+
+footer#main .infobox .info p {
+  font-size: 28px;
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */

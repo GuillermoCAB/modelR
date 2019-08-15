@@ -1,0 +1,42 @@
+footer#main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    width: 100%;
+    padding: 0 10%;
+    
+    .infobox {
+
+        border-bottom: 5px solid #AB1725;
+
+        .metric {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+
+            .big {
+                font-size: 45px;
+                color: #AB1725;
+                margin: 0;
+                line-height: 30px;
+            }
+
+            .small {
+                padding-left: 10px;
+                color: #AB1725;
+                margin: 0;
+                font-size: 22px;
+            }
+        }
+
+        .info {
+
+            p{
+                font-size: 28px;
+                margin: 0;
+            }
+
+        } 
+    }
+}
