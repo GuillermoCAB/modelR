@@ -8,6 +8,10 @@ footer.select {
     box-shadow: 0px -8px 20px 0px #cecece;
     bottom: 0;
     position: fixed;
+
+    @media screen and (max-width: 991px) {
+        padding: 2% 2%;
+    }
     
     .info {
         display: flex;
@@ -24,6 +28,12 @@ footer.select {
                 margin: 0;
                 font-size: 20px;
                 letter-spacing: 2px;
+                color: #A8A8A8;
+                font-weight: 500;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 12px;
+                }
             }
 
             .priceValue {
@@ -33,23 +43,46 @@ footer.select {
                 font-weight: 200;
                 line-height: 40px;
                 letter-spacing: 2px;
+
+                @media screen and (max-width: 991px) {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
             }
         }
 
-        .model{             
+        .model{
             font-size: 20px;
             font-weight: 400;
             letter-spacing: 2px;
+            color: black;
+
+            p{                
+              margin: 0;
+            }
+
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
         }
 
     }
 
-    .selected {        
+    .selected {    
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 10%;
         width: 60%;
+        color: black;
+
+        p{                
+          margin: 0;
+        }
+
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
 
         div {
             justify-content: center;
@@ -88,7 +121,12 @@ footer.select {
         letter-spacing: 2px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
+        color: black;
+
+        @media screen and (max-width: 991px) {
+            font-size: 20px;
+        }
 
         &:hover {
             cursor: pointer;
@@ -97,6 +135,11 @@ footer.select {
         img {
             width: 16%;
             margin-left: 20px;
+
+            @media screen and (max-width: 991px) {
+                width: 14%;
+                margin-left: 10%;;
+            }
         }
     }
 }

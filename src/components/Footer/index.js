@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './styles.css';
 
 export default class Footer extends Component {
-  render() {
+  render() { 
     return <footer id="main">
 
       <div className="infobox">

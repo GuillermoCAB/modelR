@@ -3,21 +3,99 @@ section.banner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4% 10%;
+    padding: 7% 10% 0;                       
+        
+    @media screen and (max-width: 991px) {
+        padding: 20% 10% 0; 
+
+    }
+
+    .title {
+        color: black;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0 0 0 15%;
+        position: fixed;
+        margin: -10% 0 0 19%;
+        z-index: -1;                       
+        
+        @media screen and (max-width: 991px) {
+            margin: -20% 0 0 10%;
+    
+        }
+
+        .coluna {
+            display: flex;
+            flex-direction: column;
+
+            .mini {
+                font-size: 240%;
+                color: #AB1725;
+                letter-spacing: 12px;
+                font-weight: 500;                       
+        
+                @media screen and (max-width: 991px) {
+                    font-size: 140%;
+                    letter-spacing: 4px;
+            
+                }
+            }
+
+            .major{
+                display: flex;
+                font-size: 850%;
+                letter-spacing: 12px;
+                font-weight: 300;
+                line-height: 150px;  
+                padding: 0;                     
+        
+                @media screen and (max-width: 991px) {
+                    font-size: 550%;
+                    letter-spacing: 4px;
+                    line-height: 50px;  
+            
+                }
+
+                .colored {
+                    color: #AB1725;
+                    margin-left: 10%;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
     
      img {
-        width: 80%;
+        margin-top: 10%;
+        width: 55%;                       
+        
+        @media screen and (max-width: 991px) {
+            width: 100%;
+            padding-top: 30%;
+    
+        }
      }
 
-        button.begin {
+    a:hover {
+        text-decoration: none;
+    }     
+
+    button.begin {
         background: none;
         border: none;
-        margin-top: 25%;
         font-size: 22px;
         letter-spacing: 3px;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        color: black;                      
+        
+        @media screen and (max-width: 991px) {
+            margin-top: 30%; 
+    
+        }
 
         &:hover {
             cursor: pointer;
@@ -25,8 +103,18 @@ section.banner {
 
         img {
             width: 12%;
-            margin-left: 20px;
+            margin: 0 0 0 20px;
+        }                       
+        
+        @media screen and (max-width: 991px) {
+            font-size: 14px;
+            font-weight: 500;
+
+            img {
+                padding: 0
+            }
+    
         }
 
-     }
+    }
 }

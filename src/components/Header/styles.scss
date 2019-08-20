@@ -5,13 +5,23 @@ header {
     width: 100%;
     height: 10%;
     padding: 0 10%;
+    margin-top: 2%;
+
+    @media screen and (max-width: 991px) {
+        padding: 0;
+        margin-top: 7%;
+    }
 
     .logo {
         margin: 0px 0px 5px 0px;
         width: 50%;
+
+        @media screen and (max-width: 991px) {
+            margin-left: 5%;
+        }
         
         img {
-            width: 30%;
+            width: 150px;
         }
     }
     
@@ -24,12 +34,18 @@ header {
             justify-content: space-between;
             width: 100%;
 
+            @media screen and (max-width: 991px) {
+                width: 300%;
+                margin-left: 15%;
+    
+            }
+
             a {
                 text-decoration: none;
                 color: #A8A8A8;
-                padding: 4px 2px;
                 font-size: 20px;
                 transition: all ease-out 0.2s;
+                margin: 0 5% 0 0%;
 
                 &.active {
                     color: black;
@@ -40,6 +56,11 @@ header {
                     color: black !important; 
                     border-bottom: solid 3px #AB1725 !important;
                 }
+
+                @media screen and (max-width: 991px) {
+                    font-size: 14px;
+        
+                }
             }
 
             li {
@@ -47,6 +68,20 @@ header {
                 list-style-type: none;
 
             }
+        }
+
+        @media screen and (max-width: 991px) {
+            overflow-x: scroll;
+            width: 4000px;
+
+            &::-webkit-scrollbar{
+                background: rgba(128, 128, 128, 0);
+            }
+
+            &::-webkit-scrollbar-thumb:horizontal{
+                background: rgba(128, 128, 128, 0);
+            }
+
         }
     }  
 }

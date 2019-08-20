@@ -14,8 +14,21 @@ export default class Home extends Component {
     return <div>
         <Header />
         <section className="banner">
+
+          <div className="title">
+            <div className="coluna">
+              <div className="mini">
+                <p>Build your</p>
+              </div>
+              <div className="major">
+                <p>MODEL </p>
+                <p className="colored">R</p>
+              </div>
+            </div>
+          </div>
+
             <img src={banner} alt=""/>
-            <Link to='/modelr/engine'>
+            <Link to='/modelr/builder'>
             <button className="begin">
                 B E G I N
                 <img src={arrow} alt="seta"/>

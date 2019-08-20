@@ -1,0 +1,237 @@
+section.finalPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 10%;
+  height: 60%;
+}
+
+@media screen and (max-width: 991px) {
+  section.finalPrice {
+    padding: 2% 4%;
+  }
+}
+
+section.finalPrice .cont {
+  width: 100%;
+}
+
+section.finalPrice .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 2% 0 0 17%;
+  margin-top: 5%;
+}
+
+section.finalPrice .title h1 {
+  font-size: 58px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin: 0 5% 0 0;
+}
+
+section.finalPrice .title h1.bold {
+  font-weight: 400 !important;
+}
+
+section.finalPrice .title h1.red {
+  color: #AB1725;
+}
+
+@media screen and (max-width: 991px) {
+  section.finalPrice .title {
+    padding: 2% 0 0 0%;
+    margin-top: 0%;
+  }
+  section.finalPrice .title h1 {
+    font-size: 18px;
+    margin: 0 2% 0 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  section.finalPrice .title h1.bold {
+    font-weight: 500 !important;
+  }
+}
+
+section.finalPrice .content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 3%;
+}
+
+section.finalPrice .content .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.finalPrice .content .image img {
+  width: 80%;
+  margin-bottom: 20%;
+}
+
+@media screen and (max-width: 991px) {
+  section.finalPrice .content .image img {
+    width: 100%;
+    margin: 20% 0 20% 5%;
+  }
+}
+
+section.finalPrice .menu {
+  padding: 0 0 0 17%;
+}
+
+section.finalPrice .menu ul {
+  padding: 0;
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+}
+
+section.finalPrice .menu ul .start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  border-bottom: #A8A8A8 solid 1px;
+  padding-bottom: 2%;
+}
+
+section.finalPrice .menu ul .start .price {
+  color: #AB1725;
+}
+
+section.finalPrice .menu ul .selected {
+  font-size: 24px;
+  border-bottom: #A8A8A8 solid 1px;
+  padding: 1% 0;
+}
+
+section.finalPrice .menu ul .selected div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2% 0;
+}
+
+section.finalPrice .menu ul .selected div .price {
+  color: #AB1725;
+}
+
+section.finalPrice .menu ul .final {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 34px;
+  margin-top: 2%;
+}
+
+section.finalPrice .menu ul .final .price {
+  color: #AB1725;
+  font-weight: 500;
+}
+
+section.finalPrice .menu ul button.restart {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10%;
+}
+
+section.finalPrice .menu ul button.restart img {
+  margin-left: 5%;
+  width: 4%;
+}
+
+section.finalPrice .menu ul button.restart:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  section.finalPrice .menu ul button.restart {
+    font-size: 14px;
+  }
+  section.finalPrice .menu ul button.restart img {
+    width: 6%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  section.finalPrice .menu {
+    padding: 0;
+  }
+  section.finalPrice .menu ul div {
+    font-size: 14px;
+  }
+  section.finalPrice .menu ul div.start {
+    font-size: 14px;
+  }
+  section.finalPrice .menu ul div.final {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

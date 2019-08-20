@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
 
-import Engine from '../Engine';
-
-import api from '../../services/api';
-
-import './styles.css';
+import Slider from '../../components/Slider';
 
 import Header from '../../components/Header';
-import SelecBar from '../../components/SelecBar';
+import FooterSlider from '../../components/FooterSlider'
+
+import api from '../../services/api';
 
 export default class Builder extends Component {
   state = {
@@ -16,77 +13,78 @@ export default class Builder extends Component {
     engines:[],
     selEngine: {},
     colors: [],
-    selColor: {},
+      selColor: {
+        price: 0,
+        id: 0,
+      },
     wheels: [],
-    selWheel: {},  
+      selWheel: {
+        price: 0,
+        id: 0,
+    },  
     step: 1,  
+    selPric: 0,
   };
 
   async componentDidMount() {
 
     const response = await api.get('/') 
 
-    await this.setState({ response: response.data.data });
+    this.setState({ response: response.data.data });
 
-    await this.setState({ engines: response.data.data.engine.items });
-
-    this.setState({ selEngine: this.state.engines[0] })
-
-    this.addActiveClass(this.state.selEngine)
+    this.setState({ selPrice: this.state.response.price });
   }
 
-  engineHandler = async e => {
-
-    await this.setState({ selEngine: e})
-
-    this.removeActiveClass()
-
-    this.addActiveClass(e)
-
+  setParentState = async (i) => {
+    await this.setState(i)    
   }
 
-  removeActiveClass = () => {
-    var element = document.getElementsByClassName("select")[0];
-    element.classList.remove("select");
-
-    this.setAftertoHidden()
-  }
-
-  addActiveClass = e => {
-    var element = document.getElementById(e.id);
-    element.classList.add("select");
-
-    this.setAftertoDisplay(e)
-  }
-
-  setAftertoDisplay = e => {
-    var element = document.getElementsByClassName("after")[e.id - 1];
-
-    if (e.price === 0) {
-      return
-    } else {element.style.display = "flex";}
-  }
-
-  setAftertoHidden = () => {
-    var element  = Array.from(document.getElementsByClassName("after"));
-
-    element.forEach(element => {
-      element.style.display = "none";
-    });
-
+  setPrice = async (i) => {
+    this.setState({ selPrice: this.state.response.price 
+      + this.state.selEngine.price 
+      + this.state.selColor.price 
+      + this.state.selWheel.price })
   }
 
   formatNumber = (num) => {
-    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')
+    if (num == undefined){return num} 
+      else {return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}
+  }
+    
+  checkPrice = (e) => {
+    if ( e == 0 ) {return "Included"}
+     else {return this.formatNumber(e)}
+  }
+
+  addPlus = (e) => {
+    if ( e == 0 ) {return 0}
+     else {return "+ " + e}    
+  }
+
+  addMoneySign = (e) => {
+    if ( e == 0 ) {return 0}
+     else {return "$" + e}    
   }
 
   render() {
     return <div>
-        <Header />        
-        <BrowserRouter>
-          <Route path='/builder/engine' exact component={Engine} />
-        </BrowserRouter>
-        <SelecBar state={this.state} formatNumber={this.formatNumber} />
+        <Header />   
+                   
+        <Slider 
+          state={this.state} 
+          setParentState={this.setParentState} 
+          formatNumber={this.formatNumber}
+          setPrice={this.setPrice}
+          checkPrice={this.checkPrice}
+          addPlus={this.addPlus}
+          addMoneySign={this.addMoneySign}
+          />
+
+        <FooterSlider 
+          state={this.state} 
+          formatNumber={this.formatNumber} 
+          setParentState={this.setParentState}
+          />
     </div>;
   }
 }

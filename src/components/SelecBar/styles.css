@@ -17,6 +17,12 @@ footer.select {
   position: fixed;
 }
 
+@media screen and (max-width: 991px) {
+  footer.select {
+    padding: 2% 2%;
+  }
+}
+
 footer.select .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +53,14 @@ footer.select .info .price p {
   margin: 0;
   font-size: 20px;
   letter-spacing: 2px;
+  color: #A8A8A8;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 991px) {
+  footer.select .info .price p {
+    font-size: 12px;
+  }
 }
 
 footer.select .info .price .priceValue {
@@ -58,10 +72,28 @@ footer.select .info .price .priceValue {
   letter-spacing: 2px;
 }
 
+@media screen and (max-width: 991px) {
+  footer.select .info .price .priceValue {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 footer.select .info .model {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 2px;
+  color: black;
+}
+
+footer.select .info .model p {
+  margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+  footer.select .info .model {
+    display: none;
+  }
 }
 
 footer.select .selected {
@@ -76,6 +108,17 @@ footer.select .selected {
           justify-content: space-between;
   padding: 0 10%;
   width: 60%;
+  color: black;
+}
+
+footer.select .selected p {
+  margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+  footer.select .selected {
+    display: none;
+  }
 }
 
 footer.select .selected div {
@@ -121,9 +164,16 @@ footer.select button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: black;
+}
+
+@media screen and (max-width: 991px) {
+  footer.select button {
+    font-size: 20px;
+  }
 }
 
 footer.select button:hover {
@@ -133,5 +183,12 @@ footer.select button:hover {
 footer.select button img {
   width: 16%;
   margin-left: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  footer.select button img {
+    width: 14%;
+    margin-left: 10%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
