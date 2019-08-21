@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/modelR/static/css/main.8cd3f493.chunk.css",
+    "main.js": "/modelR/static/js/main.d6148ff9.chunk.js",
+    "main.js.map": "/modelR/static/js/main.d6148ff9.chunk.js.map",
+    "runtime~main.js": "/modelR/static/js/runtime~main.409fdece.js",
+    "runtime~main.js.map": "/modelR/static/js/runtime~main.409fdece.js.map",
+    "static/js/2.aece2d20.chunk.js": "/modelR/static/js/2.aece2d20.chunk.js",
+    "static/js/2.aece2d20.chunk.js.map": "/modelR/static/js/2.aece2d20.chunk.js.map",
+    "index.html": "/modelR/index.html",
+    "precache-manifest.23eadffb64b7d5793191e4ca672e5ef9.js": "/modelR/precache-manifest.23eadffb64b7d5793191e4ca672e5ef9.js",
+    "service-worker.js": "/modelR/service-worker.js",
+    "static/css/main.8cd3f493.chunk.css.map": "/modelR/static/css/main.8cd3f493.chunk.css.map",
+    "static/media/arrow.png": "/modelR/static/media/arrow.42f099d4.png",
+    "static/media/banner.png": "/modelR/static/media/banner.23fb0ba9.png",
+    "static/media/logoRedVentures.png": "/modelR/static/media/logoRedVentures.b3fc35e5.png"
+  }
+}
