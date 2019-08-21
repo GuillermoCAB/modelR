@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/modelR/static/css/main.8cd3f493.chunk.css",
-    "main.js": "/modelR/static/js/main.00c7f77e.chunk.js",
-    "main.js.map": "/modelR/static/js/main.00c7f77e.chunk.js.map",
+    "main.css": "/modelR/static/css/main.1d01c6ec.chunk.css",
+    "main.js": "/modelR/static/js/main.6b95981f.chunk.js",
+    "main.js.map": "/modelR/static/js/main.6b95981f.chunk.js.map",
     "runtime~main.js": "/modelR/static/js/runtime~main.409fdece.js",
     "runtime~main.js.map": "/modelR/static/js/runtime~main.409fdece.js.map",
-    "static/js/2.8436352f.chunk.js": "/modelR/static/js/2.8436352f.chunk.js",
-    "static/js/2.8436352f.chunk.js.map": "/modelR/static/js/2.8436352f.chunk.js.map",
+    "static/js/2.14ae10a2.chunk.js": "/modelR/static/js/2.14ae10a2.chunk.js",
+    "static/js/2.14ae10a2.chunk.js.map": "/modelR/static/js/2.14ae10a2.chunk.js.map",
     "index.html": "/modelR/index.html",
-    "precache-manifest.712db6ce385b1091c64716d6ca1e1637.js": "/modelR/precache-manifest.712db6ce385b1091c64716d6ca1e1637.js",
+    "precache-manifest.4e50b34d8cc3d89c3bed176229b83bff.js": "/modelR/precache-manifest.4e50b34d8cc3d89c3bed176229b83bff.js",
     "service-worker.js": "/modelR/service-worker.js",
-    "static/css/main.8cd3f493.chunk.css.map": "/modelR/static/css/main.8cd3f493.chunk.css.map",
+    "static/css/main.1d01c6ec.chunk.css.map": "/modelR/static/css/main.1d01c6ec.chunk.css.map",
     "static/media/arrow.png": "/modelR/static/media/arrow.42f099d4.png",
     "static/media/banner.png": "/modelR/static/media/banner.23fb0ba9.png",
+    "static/media/engine-B.png": "/modelR/static/media/engine-B.5268094f.png",
+    "static/media/engine-P.png": "/modelR/static/media/engine-P.c2fbb774.png",
+    "static/media/engine-S.png": "/modelR/static/media/engine-S.7334a2e7.png",
     "static/media/logoRedVentures.png": "/modelR/static/media/logoRedVentures.b3fc35e5.png"
   }
 }
