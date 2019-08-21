@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3d939f71b5e9355eb5bf1a3431495fca",
+    "revision": "ffbe6f7f1fa7d0d66da0417acb1acd6d",
     "url": "/modelR/index.html"
   },
   {
-    "revision": "fad303b78fd4ea938185",
-    "url": "/modelR/static/css/main.6f3a3db2.chunk.css"
+    "revision": "5ddad1a8c5acd166ca44",
+    "url": "/modelR/static/css/main.4483d92a.chunk.css"
   },
   {
-    "revision": "1b097f7e4a6f3f13b006",
-    "url": "/modelR/static/js/2.91615e9b.chunk.js"
+    "revision": "b318db30193183f60953",
+    "url": "/modelR/static/js/2.da229910.chunk.js"
   },
   {
-    "revision": "fad303b78fd4ea938185",
-    "url": "/modelR/static/js/main.d1b567fc.chunk.js"
+    "revision": "5ddad1a8c5acd166ca44",
+    "url": "/modelR/static/js/main.ae0532d8.chunk.js"
   },
   {
     "revision": "7c32e455a1a57a130677",
@@ -66,18 +66,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b3fc35e5aff9cd4c06eaf873c198278e",
     "url": "/modelR/static/media/logoRedVentures.b3fc35e5.png"
-  },
-  {
-    "revision": "61fe2b7ca67982e5cf5c472f6e222eb5",
-    "url": "/modelR/static/media/modelR-4.61fe2b7c.png"
-  },
-  {
-    "revision": "880f4280e6e78f02565c47a7a223ffd0",
-    "url": "/modelR/static/media/modelR-5.880f4280.png"
-  },
-  {
-    "revision": "e61a95dec030d6b24248fce0bd67b5de",
-    "url": "/modelR/static/media/modelR-6.e61a95de.png"
   },
   {
     "revision": "f7e3658c8f4c169a1525c3e62d199abe",
