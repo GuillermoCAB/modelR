@@ -3,12 +3,16 @@ import React, { Component } from 'react';
 import api from '../../services/api';
 import Spinner from '../../components/Spinner/Spinner.js'
 
+import P from '../../images/engine-P.png'
+import S from '../../images/engine-S.png'
+
 import './styles.css';
 
 export default class Engine extends Component {
 
   state ={
       loading: true,
+      counter: 0,
   };
 
   async componentDidMount() {
@@ -45,6 +49,7 @@ export default class Engine extends Component {
 
   addActiveClass = e => {
     var element = document.getElementById(e.id);
+    console.log(e)
     element.classList.add("select");
 
     this.setAftertoDisplay(e)
@@ -67,13 +72,36 @@ export default class Engine extends Component {
 
   }
 
+  selectImage = () => {
+    if(this.props.state.selEngine.id == 1) {
+      return P
+    } else {return S}
+  }
+  
+  imageLoaded = async () => {
+    var counter = this.state.counter + 1
+    this.setState({ counter: counter });
+    console.log(this.state.counter)
+    if (this.state.counter >= 2) {
+      await this.setState({ loading: false });
+
+    }
+  }
+
   render() {  
 
-    if (this.state.loading === true ) return <Spinner />;
-
     return <div>
-        <section className="engine">
 
+        <div style={{display: "none"}}>          
+          <img src={P} onLoad={() => {this.imageLoaded()}} alt=""/>        
+          <img src={S} onLoad={() => {this.imageLoaded()}} alt=""/>
+        </div>
+
+        <div style={{display: this.state.loading ? "block" : "none"}}>
+        <Spinner />
+        </div>
+
+        <section className="engine" style={{display: this.state.loading ? "none" : "flex"}}>
 
           <div  className="cont" >
             <div className="row">   
@@ -94,7 +122,7 @@ export default class Engine extends Component {
 
               <div className="col-sm-12 col-md-6">
                 <div className="image">
-                  <img src={`../../images/engine-${this.props.state.selEngine.type}.png`} alt=""/>
+                  <img src={this.selectImage()} alt={this.props.state.selEngine.type}/>
                 </div>
               </div>
 

@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import api from '../../services/api';
 import Spinner from '../../components/Spinner/Spinner.js'
 
+import wheel7 from '../../images/wheels-7.png'
+import wheel8 from '../../images/wheels-8.png'
+import wheel9 from '../../images/wheels-9.png'
+
 import './styles.css';
 
 export default class Wheels extends Component {
@@ -11,6 +15,7 @@ export default class Wheels extends Component {
     wheelsInverterArray: [],
     wheelsArray: [],    
     loading: true,
+    counter: 0,
   }
 
   async componentDidMount() {
@@ -23,11 +28,7 @@ export default class Wheels extends Component {
 
     this.createWheelsArray()
 
-    this.setState({ loading: false })
-
     this.addActiveClass(this.props.state.selWheel)
-
-    this.pageScroll()
   }
 
   selecHandler = async e => {
@@ -93,16 +94,36 @@ export default class Wheels extends Component {
   pageScroll = () => {
     var element = document.getElementById("scrollable");
     element.scrollBy(120, 0);
+  }
 
-    console.log(element.id)
+  selectWheelImage = (e) => {
+    if (e.id == 7) {
+      return wheel7
+    } else if (e.id == 8) {
+      return wheel8
+    } else { return wheel9 }
+  }
+  
+  imageLoaded = async () => {
+    var counter = this.state.counter + 1
+    this.setState({ counter: counter });
+    console.log(this.state.counter)
+    if (this.state.counter >= 2) {
+      await this.setState({ loading: false });
+
+      this.pageScroll()
+    }
   }
 
   render() {
 
-    if (this.state.loading === true ) return <Spinner />;
-    
     return <div>
-        <section className="wheels">
+
+        <div style={{display: this.state.loading ? "block" : "none"}}>
+        <Spinner />
+        </div>
+
+        <section className="wheels" style={{display: this.state.loading ? "none" : "flex"}}>
 
           <div  className="cont" >
             <div className="row">        
@@ -118,24 +139,53 @@ export default class Wheels extends Component {
 
             <div className="menu" id="scrollable">
               <ul>
+
                 <div className="inverter">
                   {this.state.wheelsInverterArray.map(item => 
-                  <button  key={item.id} id={item.id} onClick={()=> {this.selecHandler(item)}}>
-                    <img src={`../../images/wheels-${item.id}.png`} alt=""/>
+
+                  <button  
+                    key={item.id} id={item.id} 
+                    onClick={()=> {this.selecHandler(item)}}>
+                    
+                    <img src={this.selectWheelImage(item)} 
+                      onLoad={() => {this.imageLoaded()}} 
+                      alt=""
+                      />
+
                     <p className="name">{item.label}</p>
-                    <p className="price">{this.props.checkPrice(this.props.addPlus(this.props.addMoneySign(item.price)))}</p>
+
+                    <p className="price">
+                    {this.props.checkPrice(this.props.addPlus(this.props.addMoneySign(item.price)))}
+                    </p>
+
                   </button>
+
                     )}                  
                 </div>
+
                 <div className="noninver">
                   {this.state.wheelsArray.map(item => 
-                  <button  key={item.id} id={item.id} onClick={()=> {this.selecHandler(item)}}>
-                    <img src={`../../images/wheels-${item.id}.png`} alt=""/>
+
+                  <button  
+                    key={item.id} 
+                    id={item.id} 
+                    onClick={()=> {this.selecHandler(item)}}>
+                   
+                    <img src={this.selectWheelImage(item)} 
+                      onLoad={() => {this.imageLoaded()}} 
+                      alt=""/>
+
                     <p className="name">{item.label}</p>
-                    <p className="price">{this.props.checkPrice(this.props.addPlus(this.props.addMoneySign(item.price)))}</p>
+
+                    <p className="price">
+                    {this.props.checkPrice(this.props.addPlus(this.props.addMoneySign(item.price)))}
+                    </p>
+
                   </button>
+
                     )}
                 </div>
+
               </ul>
             </div>
 

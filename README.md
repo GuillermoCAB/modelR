@@ -1,6 +1,23 @@
+## Model R Web Concept
+
+### How to set up
+
+This project was build using React.js so is very simple to install and run the application.
+All you need to do is clone this repository, then go in the project directory and run one of the following commands:
+
+## Run on development mode:
+
+npm start or yarn start then opne [http://localhost:3000](http://localhost:3000) to view the app in the browser.
+
+## Build production mode files:
+
+npm build or yarn build to correctly bundles React in production mode.
+It will optimizes the build for the best performance and generate the static files on a build folder.
+You can then deploy the build folder to have the application running online.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Available Scriptsss
 
 In the project directory, you can run:
 

@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 import refresh from '../../images/refresh-arrow.png'
 
+import Red from '../../images/final-4.png'
+import Blue from '../../images/final-5.png'
+import Gray from '../../images/final-6.png'
+
 import './styles.css';
 
 export default class FinalPrice extends Component {
@@ -21,6 +25,14 @@ export default class FinalPrice extends Component {
      })
 
      this.props.setPrice()
+  }
+
+  selectImageClr = () => {
+    if (this.props.state.selColor.id == 4) {
+      return Red
+    } else if (this.props.state.selColor.id == 5) {
+      return Blue
+    } else { return Gray }
   }
 
   render() {
@@ -52,7 +64,7 @@ export default class FinalPrice extends Component {
 
               <div className="col-sm-12 col-md-6">
                 <div className="image">
-                  <img src={`../../images/final-${this.props.state.selColor.id}.png`} alt=""/>           
+                  <img src={this.selectImageClr()} alt=""/>           
                 </div>
               </div>
 
