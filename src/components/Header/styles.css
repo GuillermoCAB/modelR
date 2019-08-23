@@ -59,7 +59,7 @@ header .links ul {
 
 header .links ul a {
   text-decoration: none;
-  color: #A8A8A8;
+  color: #a8a8a8;
   font-size: 20px;
   -webkit-transition: all ease-out 0.2s;
   transition: all ease-out 0.2s;
@@ -68,12 +68,12 @@ header .links ul a {
 
 header .links ul a.active {
   color: black;
-  border-bottom: solid 3px #AB1725;
+  border-bottom: solid 3px #ab1725;
 }
 
 header .links ul a:hover {
   color: black !important;
-  border-bottom: solid 3px #AB1725 !important;
+  border-bottom: solid 3px #ab1725 !important;
 }
 
 @media screen and (max-width: 991px) {

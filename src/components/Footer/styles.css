@@ -15,12 +15,13 @@ footer#main {
 }
 
 footer#main .infobox {
-  border-bottom: 5px solid #AB1725;
+  width: 8%;
+  border-bottom: 5px solid #ab1725;
 }
 
 @media screen and (max-width: 991px) {
   footer#main .infobox {
-    border-bottom: 3px solid #AB1725;
+    border-bottom: 3px solid #ab1725;
     margin-bottom: 5%;
     width: 22%;
   }
@@ -40,7 +41,7 @@ footer#main .infobox .metric {
 
 footer#main .infobox .metric .big {
   font-size: 45px;
-  color: #AB1725;
+  color: #ab1725;
   margin: 0;
   line-height: 30px;
 }
@@ -55,7 +56,7 @@ footer#main .infobox .metric .big {
 
 footer#main .infobox .metric .small {
   padding-left: 2%;
-  color: #AB1725;
+  color: #ab1725;
   margin: 0;
   font-size: 22px;
   line-height: 11px;

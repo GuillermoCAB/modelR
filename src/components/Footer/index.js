@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CountUp from 'react-countup';
 
 import './styles.css';
 
@@ -18,7 +19,7 @@ export default class Footer extends Component {
 
       <div className="infobox">
         <div className="metric">
-          <p className="big">420</p>
+          <p className="big"><CountUp end={420} /></p>
           <p className="small">mi</p>
         </div>
         <div className="info">
@@ -28,7 +29,7 @@ export default class Footer extends Component {
 
       <div className="infobox">
         <div className="metric">
-          <p className="big">250</p>
+          <p className="big"><CountUp end={250} /></p>
           <p className="small">mp/h</p>
         </div>
         <div className="info">

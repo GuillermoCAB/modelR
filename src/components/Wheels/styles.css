@@ -1,7 +1,4 @@
 section.wheels {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -194,7 +191,7 @@ section.wheels .menu ul .inverter button.select p.name {
 }
 
 section.wheels .menu ul .inverter button.select p.price {
-  color: #AB1725;
+  color: #ab1725;
 }
 
 section.wheels .menu ul .inverter button.select img {
@@ -282,7 +279,7 @@ section.wheels .menu ul .noninver button.select p.name {
 }
 
 section.wheels .menu ul .noninver button.select p.price {
-  color: #AB1725;
+  color: #ab1725;
 }
 
 section.wheels .menu ul .noninver button.select img {

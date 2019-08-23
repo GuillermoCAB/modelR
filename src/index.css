@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Saira+Condensed:100,200,300,400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Saira+Condensed:100,200,300,400,500,600,700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,9 +7,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Saira Condensed", "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Saira Condensed", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffffff;
@@ -17,13 +17,16 @@ body {
   height: 100%;
 }
 
-code, button {
-  font-family: "Saira Condensed", source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+code,
+button {
+  font-family: "Saira Condensed", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
 }
 
 a {
   text-decoration: none;
 }
 
-button:focus {outline:0;}
+button:focus {
+  outline: 0;
+}

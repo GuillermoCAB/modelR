@@ -121,7 +121,7 @@ section.engine .content .menu ul.engine button.select li {
 }
 
 section.engine .content .menu ul.engine button.select li::after {
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   height: 25px;
@@ -160,7 +160,7 @@ section.engine .content .menu ul.engine button li {
 }
 
 section.engine .content .menu ul.engine button li::after {
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   height: 25px;
@@ -195,7 +195,7 @@ section.engine .content .menu ul.engine button li h1 .colored {
 }
 
 section.engine .content .menu ul.engine button li .feature {
-  color: #A8A8A8;
+  color: #a8a8a8;
   font-size: 28px;
   letter-spacing: 2px;
 }

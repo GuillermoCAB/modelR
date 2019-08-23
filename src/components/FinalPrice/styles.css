@@ -50,7 +50,7 @@ section.finalPrice .title h1.bold {
 }
 
 section.finalPrice .title h1.red {
-  color: #AB1725;
+  color: #ab1725;
 }
 
 @media screen and (max-width: 991px) {
@@ -134,17 +134,17 @@ section.finalPrice .menu ul .start {
       -ms-flex-align: center;
           align-items: center;
   font-size: 24px;
-  border-bottom: #A8A8A8 solid 1px;
+  border-bottom: #a8a8a8 solid 1px;
   padding-bottom: 2%;
 }
 
 section.finalPrice .menu ul .start .price {
-  color: #AB1725;
+  color: #ab1725;
 }
 
 section.finalPrice .menu ul .selected {
   font-size: 24px;
-  border-bottom: #A8A8A8 solid 1px;
+  border-bottom: #a8a8a8 solid 1px;
   padding: 1% 0;
 }
 
@@ -162,7 +162,7 @@ section.finalPrice .menu ul .selected div {
 }
 
 section.finalPrice .menu ul .selected div .price {
-  color: #AB1725;
+  color: #ab1725;
 }
 
 section.finalPrice .menu ul .final {
@@ -180,7 +180,7 @@ section.finalPrice .menu ul .final {
 }
 
 section.finalPrice .menu ul .final .price {
-  color: #AB1725;
+  color: #ab1725;
   font-weight: 500;
 }
 
