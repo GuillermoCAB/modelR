@@ -7,11 +7,11 @@ All you need to do is clone this repository, then go in the project directory an
 
 ### Run on development mode:
 
-npm start or yarn start then opne [http://localhost:3000](http://localhost:3000) to view the app in the browser.
+`npm start` or `yarn start` then open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
 
 ### Build production mode files:
 
-npm build or yarn build to correctly bundles React in production mode.
+`npm build` or `yarn build` to correctly bundles React in production mode.
 It will optimizes the build for the best performance and generate the static files on a build folder.
 You can then deploy the build folder to have the application running online.
 
